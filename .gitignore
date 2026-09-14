@@ -1,0 +1,29 @@
+# ── Secrets ───────────────────────────────────────────────
+.env
+*.env
+!*.env.example
+
+# ── Vendored tools ────────────────────────────────────────
+# Cloned & updated by ./setup.sh; each carries its own git history.
+# Nothing under tools/ is tracked here.
+tools/
+
+# ── Projects ──────────────────────────────────────────────
+# Personal footage, transcripts, compositions, and renders — never tracked.
+# Everything under projects/ is ignored EXCEPT the starter template.
+projects/*
+!projects/_template/
+!projects/_template/**
+
+# ── Build / cache cruft ───────────────────────────────────
+__pycache__/
+*.pyc
+node_modules/
+dist/
+build/
+
+# ── OS / editor ───────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

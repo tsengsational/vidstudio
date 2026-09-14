@@ -1,0 +1,3 @@
+# Normalize text files; keep shell scripts LF so they run in bash on any platform.
+* text=auto
+*.sh text eol=lf
